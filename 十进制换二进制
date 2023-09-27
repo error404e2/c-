@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(int argc, char *argv[])
+{
+	char  num;
+	char a,b,c,d,e,f,g,h,i,j,k,l,m,n;
+	num = 120;
+	a = num %2;
+	b= num /2;
+	c =  b%2;
+	d = b /2;
+	e= d %2;
+	f =  d/2;
+	g = f%2;
+	h = f /2;
+	i = h %2;
+	j= h/2;
+	k= j %2;
+	l = j /2;
+	m = l %2;
+    n = l /2;
+	printf("120的二进制是：%d%d%d%d%d%d%d",m,k,i,g,e,c,a);
+	return 0;
+}
