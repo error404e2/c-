@@ -1,23 +1,22 @@
 #include <stdio.h>
-int main(int argc, char *argv[])
-{
-	char  num;//定义 
-	char a,b,c,d,e,f,g,h,i,j,k,l,m,n;
-	num = 120;
-	a=num%2;//十进制转二进制数据计算 
-	b=num/2;
-	c=b%2;//余数
-	d=b/2;//乘法
-	e=d%2;
-	f=d/2;
-	g=f%2;
-	h=f/2;
-	i=h%2; 
-	j=h/2;
-	k=j%2;
-	l=j/2;
-	m=l%2;
-        n=l/2;
-	printf("120的二进制是：%d%d%d%d%d%d%d",m,k,i,g,e,c,a);//总结数据，输出结果 
-	return 0;
+int main(int argc, char *argv[]){
+char num;//定义
+char a,b,c,d,e,f,g,h,i,j,k,l,m,n;
+num = 120;
+a=num%2;//十进制转二进制数据计算 
+b=num/2;
+c=b%2;//余数
+d=b/2;//除法
+e=d%2;
+f=d/2;
+g=f%2;
+h=f/2;
+i=h%2;
+j=h/2;
+k=j%2;
+l=j/2;
+m=l%2;    
+n=l/2;
+printf("120的二进制是：%d%d%d%d%d%d%d",m,k,i,g,e,c,a);//总结数据，输出结果 
+return 0
 }
