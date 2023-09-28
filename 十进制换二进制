@@ -17,6 +17,6 @@ k=j%2;
 l=j/2;
 m=l%2;    
 n=l/2;
-printf("120的二进制是：%d%d%d%d%d%d%d",m,k,i,g,e,c,a);//总结数据，输出结果 
+printf("num=%d的二进制是：%d%d%d%d%d%d%d%d",num,m,k,i,g,e,c,a);//总结数据，输出结果 
 return 0
 }
