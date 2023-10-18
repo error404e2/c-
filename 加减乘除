@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+    int a, c, d;
+    char b;
+    printf("请输入一个简单的加减乘除的数学问题：");
+    scanf("%d %c %d",&a,&b,&c);
+    if (b == '+')//当b为加号时进行加法运算
+    {
+        d = a + c;
+        printf("%d",d);
+    }
+    if (b == '-')//当b为减号时进行减法运算
+    {
+        d = a - c;
+        printf("%d",d);
+    }
+    if (b == '*')//当b为乘号时进行乘法运算
+    {
+        d = a * c;
+        printf("%d",d);
+    }
+    if (b == '/')//当b为除号时进行除法运算
+    {
+        d = a / c;
+        printf("%d",d);
+    }
+return 0;
+}
