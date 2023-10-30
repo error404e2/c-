@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+// 定义一个函数，求两个数的最大公约数
+int gcd(int a, int b) {
+  // 使用辗转相除法
+  int r;
+  while (b > 0) {
+    r = a % b;
+    a = b;
+    b = r;
+  }
+  return a;
+}
+
+// 定义一个函数，求两个数的最小公倍数
+int lcm(int a, int b) {
+  // 使用公式：最小公倍数 = 两数之积 / 最大公约数
+  return a * b / gcd(a, b);
+}
+
+int main() {
+  // 定义一个变量，存储学号后两位
+  int x;
+  // 输入学号后两位
+  printf("请输入学号后两位：\n");
+  scanf("%d", &x);
+  // 计算学号后两位+100
+  int y = x + 100;
+  // 计算120和y的最大公约数和最小公倍数
+  int g = gcd(120, y);
+  int l = lcm(120, y);
+  // 输出结果
+  printf("120和%d的最大公约数是%d\n", y, g);
+  printf("120和%d的最小公倍数是%d\n", y, l);
+  return 0;
+}
