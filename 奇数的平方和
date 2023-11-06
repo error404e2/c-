@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main() {
+    long i=1, sum = 0,q=2;
+    while (i<=99){
+    sum+=i*i;
+    i+=q;
+    }
+    printf("1-100的奇数的平方和为%d。", sum);
+    return 0;
+}
