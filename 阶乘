@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(void){
+    int n=0,b=1;
+    printf("输入一个整数：");
+    scanf("%d",&n);
+    for(int i=1;i!=n;i++){
+        b=b*i;
+    }
+    printf("%d的阶乘：%d",n,b);
+}
