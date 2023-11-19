@@ -1,0 +1,16 @@
+#include <stdio.h>
+int sum(int a[],int b[],int min){
+    int i;
+    int c[min];
+    for(i=0;i<min;i++){
+        c[i]=a[i]+b[i];
+        printf("%d   ",c[i]);
+    }
+}
+int main(void){
+    int a[]={1,5,2,7,3,8,3,8};
+    int b[]={1,5,3,7,1,5,2,9};
+    int min=sizeof(a)/sizeof(a[0]);
+    printf("%d\n",min);
+    sum(a,b,min);
+}
