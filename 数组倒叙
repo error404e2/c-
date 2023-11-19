@@ -1,0 +1,14 @@
+#include <stdio.h>
+double x1(double a[],int x){
+    int i;
+    for(i=x;i>0;i--){
+        printf("%lf   ",a[i]);
+    }
+}
+
+int main(void){
+    double a[10]={1.0,4.0,2.0,6.0,8.0,2.0,6.0,4.0,2.0,9.0};
+    int x=sizeof(a)/sizeof(a[0]);
+    printf("%d\n",x);
+    x1(a,x);
+}
