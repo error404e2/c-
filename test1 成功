@@ -1,0 +1,18 @@
+#include <stdio.h>
+int string_in(char *x,char*y){
+    int i=0;
+    for(i=0;*x+i!='\0';i++){
+        if(*x+i==*y+i){
+            printf("%d",i);
+            break;
+        }
+    }
+    printf("%c",x[i]);
+    char *a=&x[i];
+    printf("%p",a);
+}
+int main(void){
+    char *x="hats";
+    char *y="at";
+    string_in(x,y);
+}
